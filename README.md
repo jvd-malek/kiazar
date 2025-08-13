@@ -20,7 +20,7 @@ Make sure you have **Node.js** (v16 or later) installed on your machine.
 ### Installation
 ```bash
 # Clone the repository
-git clone [https://github.com/yourusername/kiazarco.git](https://github.com/jvd-malek/kiazar.git)
+git clone https://github.com/jvd-malek/kiazar.git
 
 # Navigate into the project folder
 cd kiazarco
