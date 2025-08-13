@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  img {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    pointer-events: none;
+    -webkit-user-drag: none;
+  }
+
+  @font-face {
+    font-family: Vazir;
+    src: url(./font/Vazir.ttf);
+  }
+
+  :root {
+    @apply scroll-smooth
+  }
+
+  body {
+    @apply font-[Vazir]
+  }
+
+  .navArrow {
+    @apply md:bottom-4
+  }
+
+  .navBox {
+    @apply fixed bottom-4 right-4 *:border *:border-sky-400 *:rounded-xl flex flex-col justify-center items-center *:bg-sky-100 *:p-1 *:shadow-[0_35px_35px_rgba(0,0,0,0.25)] gap-2
+  }
+
+  ::-webkit-scrollbar {
+    @apply w-1.5 bg-slate-500
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-500 mt-5
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply transition-colors bg-white hover:bg-sky-300
+  }
+
+}
+
+.navClose {
+  @apply -bottom-full opacity-0 md:opacity-100
+}
+
+.navOpen {
+  @apply bottom-0 opacity-100
+}
+
+.close1 {
+  @apply -translate-y-0.5 h-[3px]
+}
+
+.close2 {
+  @apply opacity-100 h-[3px]
+}
+
+.close3 {
+  @apply translate-y-0.5 h-[3px]
+}
+
+.open-1 {
+  @apply rotate-45 translate-y-1 h-0.5
+}
+
+.open-2 {
+  @apply opacity-0 h-0.5
+}
+
+.open-3 {
+  @apply -rotate-45 -translate-y-1 h-0.5
+}
